@@ -1,4 +1,27 @@
-# NodeJS-RESTful-APIs
+# Node.js + Express + MongoDB
 NodeJS Server with express and MongoDB
 
-Learn How to setup Nodejs Server for APIs <a href="https://www.programmingschool.io/easy-way-to-build-node-js-restful-apis/">Here</a>.
+# Steps to setup :
+After cloning repo :
+
+```sh
+$ cd /<cloned-directory>
+$ npm install
+```
+
+Connect mongoDB:
+```sh
+$ sudo mongod --dbpath <dp_path>
+```
+
+Start server:
+```sh
+$ node server.js
+```
+
+# File upload Example
+
+From browser go to:
+```sh
+http://localhost:3030/upload/files
+```
