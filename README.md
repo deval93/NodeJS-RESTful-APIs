@@ -25,3 +25,7 @@ From browser go to:
 ```sh
 http://localhost:3030/upload/files
 ```
+
+# Send emails in NodeJS
+
+Sending emails using 'nodemailer' example <a href="https://github.com/deval93/NodeJS-RESTful-APIs/blob/master/api/controllers/mailController.js">here.</a>
