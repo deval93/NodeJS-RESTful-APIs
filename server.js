@@ -6,7 +6,8 @@ var express = require('express'),
     mongoose = require('mongoose'),
     bodyParser = require('body-parser'),
     userRoutes = require('./api/routes/usersRoutes'),
-    fileRoutes = require('./api/routes/fileHandlerRoutes');
+    fileRoutes = require('./api/routes/fileHandlerRoutes'),
+    mailRoutes = require('./api/routes/mailRoutes');
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
@@ -17,6 +18,7 @@ app.use(bodyParser.json());
 
 userRoutes(app);
 fileRoutes(app);
+mailRoutes(app);
 
 app.get('/', function (req, res) {
     res.send('RESTful API server started on: ' + port)
