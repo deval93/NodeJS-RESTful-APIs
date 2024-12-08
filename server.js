@@ -11,9 +11,9 @@ var express = require('express'),
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/testDB');
+mongoose.connect(`${process.env.DB_URL}/${process.env.DB_NAME}`);
 
-app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 userRoutes(app);
@@ -24,8 +24,8 @@ app.get('/', function (req, res) {
     res.send('RESTful API server started on: ' + port)
 });
 
-app.get('/upload/files',function(req,res){
-      res.sendFile(__dirname + "/index.html");
+app.get('/upload/files', function (req, res) {
+    res.sendFile(__dirname + "/index.html");
 });
 
 app.listen(port, function (err) {
