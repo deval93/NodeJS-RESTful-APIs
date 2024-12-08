@@ -7,15 +7,22 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Deval Kasundra<dkdeval13@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "express",
+    "mongoose",
+    "API",
+    "nodemailer",
+    "multer"
+  ],
   "devDependencies": {
     "nodemon": "^1.17.5"
   },
   "dependencies": {
     "express": "^4.16.3",
-    "mongoose": "^5.1.4",
+    "mongoose": "^8.8.4",
     "multer": "1.1.0",
-    "nodemailer": "^4.6.7"
+    "nodemailer": "^6.9.16"
   }
 }
